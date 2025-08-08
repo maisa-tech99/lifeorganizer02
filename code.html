@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Organizer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-clipboard-list"></i>
+                <h1>Life Organizer</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="nav-section">
+                    <h3>Áreas da Vida</h3>
+                    <ul class="life-areas">
+                        <li><a href="#dashboard" class="active"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+                        <li><a href="#tasks"><i class="fas fa-tasks"></i> Tarefas</a></li>
+                        <li><a href="#spreadsheets"><i class="fas fa-table"></i> Planilhas</a></li>
+                        <li><a href="#notes"><i class="fas fa-sticky-note"></i> Notas</a></li>
+                    </ul>
+                </div>
+                
+                <button class="add-area-btn">
+                    <i class="fas fa-plus"></i> Adicionar Área
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div id="dashboard" class="content-section active">
+                <h2>Dashboard</h2>
+                <p>Visão geral da sua organização pessoal.</p>
+                <!-- Conteúdo será carregado via JS -->
+            </div>
+
+            <div id="tasks" class="content-section">
+                <h2>Tarefas</h2>
+                <p>Gerencie suas tarefas pessoais.</p>
+            </div>
+
+            <div id="spreadsheets" class="content-section">
+                <h2>Planilhas</h2>
+                <p>Crie e edite planilhas personalizadas.</p>
+            </div>
+
+            <div id="notes" class="content-section">
+                <h2>Notas</h2>
+                <p>Armazene suas anotações importantes.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
